@@ -1,3 +1,5 @@
+const figlet = require("figlet");
+
 const express = require('express');
 const routes = require('./routes');
 // import sequelize connection
@@ -10,6 +12,14 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(routes);
 
+figlet("Ecommerce\n    backend!", function (err, data) {
+  if (err) {
+    console.log("Something went wrong...");
+    console.dir(err);
+    return;
+  }
+  console.log(data);
+});
 // sync sequelize models to the database, then turn on the server
 app.listen(PORT, () => {
   console.log(`App listening on port ${PORT}!`);
