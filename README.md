@@ -28,4 +28,3 @@ npm run start
 ## Screenshots
 
 
-https://user-images.githubusercontent.com/114896166/218018767-ba3fb45f-b471-4fa1-aaa3-e8ff22c0bc78.mp4
