@@ -17,10 +17,16 @@ This is a command-line application that using Node.js, Inquirer, MySQL and conso
 
 - MySQL, .env, source db/schema.sql,
 ~~~
+mysql -u root -p
+source db/schema.sql
+use ecommerce_db;
+quit
+~~~
+~~~
 node seeds/index.js
 ~~~
 ~~~
-npm run start
+npm run start/ node server.js
 ~~~
 
 
